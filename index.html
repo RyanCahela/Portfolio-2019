@@ -11,19 +11,21 @@
 </head>
 <body>
     <section class="about-me">
-        <nav role="navigation">
-            <ul class="about-me__nav">
-                <li class="about-me__header">
-                    <h1 class="about-me__heading">Ryan Cahela</h1>
-                </li>
-                <li>
-                    <a class="about-me__link" href="#">Projects</a>
-                </li>
-                <li>
-                    <a class="about-me__link" href="#">Contact</a>
-                </li>
-            </ul>
-        </nav>
+        <header role="banner">
+            <nav role="navigation">
+                <ul class="about-me__nav">
+                    <li class="about-me__header">
+                        <h1 class="about-me__heading">Ryan Cahela</h1>
+                    </li>
+                    <li>
+                        <a class="about-me__link" href="#projects">Projects</a>
+                    </li>
+                    <li>
+                        <a class="about-me__link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
         <div class="about-me__hero-animation">
             <h2 class="about-me__hero-heading">I Love</h2>
             <div class="about-me__hero-box">Design</div>
@@ -57,13 +59,13 @@
             </p>
         </section>
     </section>
-    <section class="projects">
+    <section id="projects" class="projects">
         <svg class="projects__diagonal" width="120%" height="100" viewBox="0 0 1294 314" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
             <path d="M1292.79 -3.67883e-05L1293.69 313.289L7.00193e-08 313.289L1292.79 -3.67883e-05Z" fill="#32464C"/>
         </svg>
-        <header class="projects__header">
+        
             <h3 class="projects__heading">Projects</h3>
-        </header>
+        
         <ul class="projects__gallery">
             <li class="projects__gallery__thumb">
                 <img class="projects__gallery__thumb__img" src="img/food-quiz-thumb.png" alt="">
@@ -76,16 +78,16 @@
         </svg>
     </section>
     <section id="contact" class="contact">
-        <h3>Contact</h3>
-        <p>Ryancahela@gmail.com</p>
+        <h3 class="contact__heading">Contact</h3>
+        <p class="contact__email">Ryancahela@gmail.com</p>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
 
-        <form action="">
-            <label for="name">Name</label>
-            <input type="text" name="name">
-            <label for="message">Message</label>
-            <input type="textfild" name="message">
-            <input type="button" value="Send">
-        </form>
+        
 
 
     </section>

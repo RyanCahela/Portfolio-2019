@@ -104,7 +104,9 @@ ul {
 
 .about-me__picture {
     border-radius: 50%;
-    width: 100%;
+    max-width: 80%;
+    display: block;
+    margin: 0 auto;
     filter: opacity(90%);
 
 }
