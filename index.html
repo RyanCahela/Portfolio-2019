@@ -10,22 +10,25 @@
     <title>Ryan Cahela | Portfolio 2019</title>
 </head>
 <body>
+    <header class="header" role="banner">
+        <nav role="navigation">
+            <ul class="header__nav">
+                <li class="header__header">
+                    <h1 class="header__heading">Ryan Cahela</h1>
+                </li>
+                <li>
+                    <a class="header__link" href="#projects">Projects</a>
+                </li>
+                <li>
+                    <a class="header__link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <svg  class="projects__diagonal-flipped" width="100%" height="100" preserveAspectRatio="none"  viewBox="0 0 1327 1132" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1327 1132H0L1327 0V1132Z" fill="#32464C"/>
+        </svg>    
+    </header>
     <section class="about-me">
-        <header role="banner">
-            <nav role="navigation">
-                <ul class="about-me__nav">
-                    <li class="about-me__header">
-                        <h1 class="about-me__heading">Ryan Cahela</h1>
-                    </li>
-                    <li>
-                        <a class="about-me__link" href="#projects">Projects</a>
-                    </li>
-                    <li>
-                        <a class="about-me__link" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
         <div class="about-me__hero-animation">
             <h2 class="about-me__hero-heading">I Love</h2>
             <div class="about-me__hero-box">Design</div>
@@ -60,34 +63,59 @@
         </section>
     </section>
     <section id="projects" class="projects">
-        <svg class="projects__diagonal" width="120%" height="100" viewBox="0 0 1294 314" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-            <path d="M1292.79 -3.67883e-05L1293.69 313.289L7.00193e-08 313.289L1292.79 -3.67883e-05Z" fill="#32464C"/>
+        <svg  class="projects__diagonal" width="100%" height="100" preserveAspectRatio="none" viewBox="0 0 1327 1132" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1327 1132H0L1327 0V1132Z" fill="#32464C"/>
         </svg>
+            
         
             <h3 class="projects__heading">Projects</h3>
         
         <ul class="projects__gallery">
             <li class="projects__gallery__thumb">
-                <img class="projects__gallery__thumb__img" src="img/food-quiz-thumb.png" alt="">
                 <h4 class="projects__gallery__thumb__heading">Food Origin Master</h4>
+                <a href="https://ryancahela.github.io/food-quiz-app/"><img class="projects__gallery__thumb__img" src="img/food-quiz-thumb.png" alt="thumbnail for food quiz"></a>
                 <p class="projects__gallery__thumb__paragraph">This is a quiz that tests your knowledge of the origins of different foods</p>
             </li>
+            <li class="projects__gallery__thumb">
+                <h4 class="projects__gallery__thumb__heading">Todo List 2019</h4>
+                <a href="https://ryancahela.github.io/todo-list-2019/"><img class="projects__gallery__thumb__img" src="img/todo-list-thumb.png" alt="thumbnail for todo list 2019"></a>
+                <p class="projects__gallery__thumb__paragraph">A simple CRUD app I built using vanilla javascirpt</p>
+            </li>
         </ul>
-        <svg class="projects__diagonal-flipped" width="120%" height="100" viewBox="0 0 1294 314" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-            <path d="M1292.79 -3.67883e-05L1293.69 313.289L7.00193e-08 313.289L1292.79 -3.67883e-05Z" fill="#32464C"/>
-        </svg>
+        <svg  class="projects__diagonal-flipped" width="100%" height="100" preserveAspectRatio="none"  viewBox="0 0 1327 1132" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1327 1132H0L1327 0V1132Z" fill="#32464C"/>
+        </svg>      
     </section>
     <section id="contact" class="contact">
         <h3 class="contact__heading">Contact</h3>
         <p class="contact__email">Ryancahela@gmail.com</p>
-        <ul>
-            <li></li>
-            <li></li>
-            <li></li>
+        <ul class="contact__icons">
+            <li>
+                <a class="contact__icons__icon" href="#">
+                    <svg class="contact__icons__icon" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                        <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a class="contact__icons__icon" href="https://github.com/RyanCahela">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a class="contact__icons__icon" href="https://www.linkedin.com/in/ryan-cahela-6125605b/">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin">
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                        <rect x="2" y="9" width="4" height="12"></rect>
+                        <circle cx="4" cy="4" r="2"></circle>
+                    </svg>
+                </a>
+            </li>
             <li></li>
         </ul>
-
-        
 
 
     </section>
