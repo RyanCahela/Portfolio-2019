@@ -11,153 +11,132 @@
 </head>
 <body>
     <header class="header" role="banner">
-        <nav role="navigation">
-            <ul class="header__nav">
-                <li class="header__header">
-                    <h1 class="header__heading">Ryan Cahela</h1>
-                </li>
-                <li class="margin-left--auto">
-                    <a class="header__link" href="#projects">Projects</a>
-                </li>
-                <li class="margin-left--50px">
-                    <a class="header__link" href="#contact">Contact</a>
-                </li>
-            </ul>
-        </nav>
+        <div class="large-screen-container">
+            <nav role="navigation">
+                <ul class="header__nav">
+                    <li class="header__header">
+                        <h1 class="header__heading">Ryan Cahela</h1>
+                    </li>
+                    <li class="margin-left--auto">
+                        <a class="header__link" href="#projects">Projects</a>
+                    </li>
+                    <li class="margin-left--50px">
+                        <a class="header__link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
         <svg  class="projects__diagonal-flipped" width="100%" height="100" preserveAspectRatio="none"  viewBox="0 0 1327 1132" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M1327 1132H0L1327 0V1132Z" fill="#32464C"/>
         </svg>    
     </header>
     <section class="about-me">
-        <div class="about-me__hero-animation">
-            <h2 class="about-me__hero-heading">I Love</h2>
-            <div class="about-me__hero-box__container">
-                <div class="about-me__hero-box green-bg z-100">Design</div>
-                <div class="about-me__hero-box purp-bg z-90">CSS</div>
-                <div class="about-me__hero-box yellow-bg z-80">Javascript</div>
-                <div class="about-me__hero-box pink-bg z-70">React</div>
-                <div class="about-me__hero-box orange-bg z-60">UX</div>
-                <div class="about-me__hero-box red-bg z-50">Animations</div>
+        <div class="about-me-container">
+            <div class="about-me__hero-animation">
+                <h2 class="about-me__hero-heading">I Love</h2>
+                <div class="about-me__hero-box__container">
+                    <div class="about-me__hero-box green-bg z-100">Design</div>
+                    <div class="about-me__hero-box purp-bg z-90">CSS</div>
+                    <div class="about-me__hero-box yellow-bg z-80">Javascript</div>
+                    <div class="about-me__hero-box pink-bg z-70">React</div>
+                    <div class="about-me__hero-box orange-bg z-60">UX</div>
+                    <div class="about-me__hero-box red-bg z-50">Animations</div>
+                </div>
             </div>
+            
+            <section class="about-me__picture-container">
+                    <img class="about-me__picture" src="img/ryan-cahela-profile-square.jpg" alt="Ryan Cahela wearing a suit and smiling">
+            </section>
+            <section class="about-me__text">
+                <h3 class="about-me__heading">About Me</h3>
+                <p class="about-me__paragraph">Hello, my name is Ryan and I’m a current
+                    student in the Thinkful coding bootcamp. 
+                    I’ve been building websites as a hobby 
+                    for over 5 years.</p>
+                <p class="about-me__paragraph">
+                    I love the creativity and attention 
+                    to detail that website development 
+                    requires. I think the internet is 
+                    the most powerful communication 
+                    medium humans have ever created and
+                    I feel lucky to be alive in such an 
+                    exciting and innovative time. 
+                </p>     
+                <p class="about-me__paragraph"> 
+                    When I’m not reading articles on 
+                    the latest tech you can find me 
+                    at the rock gym or watching a movie.
+                    Check out my projects below 
+                    and contact me to let me know what 
+                    you think.
+                </p>
+        
+            </section>
         </div>
-        <section class="about-me__picture-container">
-                <img class="about-me__picture" src="img/ryan-cahela-profile-square.jpg" alt="Ryan Cahela wearing a suit and smiling">
-        </section>
-        <section class="about-me__text">
-            <h3 class="about-me__heading">About Me</h3>
-            <p class="about-me__paragraph">Hello, my name is Ryan and I’m a current
-                 student in the Thinkful coding bootcamp. 
-                 I’ve been building websites as a hobby 
-                 for over 5 years and have decided to make 
-                 it my career.</p>
-            <p class="about-me__paragraph">
-                I love the creativity and attention 
-                to detail that software development 
-                provides. I think the internet is 
-                the most powerful communication 
-                medium humans have ever created. 
-                I feel lucky to be alive in such an 
-                exciting and innovative time. 
-            </p>     
-            <p class="about-me__paragraph"> 
-                When I’m not reading articles on 
-                the latest tech you can find me 
-                at the rock gym or going to the 
-                movies. Check out my projects below 
-                and Contact Me to let me know what 
-                you think.
-            </p>
-        </section>
     </section>
     <section id="projects" class="projects">
         <svg  class="projects__diagonal" width="100%" height="100" preserveAspectRatio="none" viewBox="0 0 1327 1132" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M1327 1132H0L1327 0V1132Z" fill="#32464C"/>
         </svg>
             
-        
-        <h3 class="projects__heading">Projects</h3>
-        
-        <ul class="projects__gallery">
-            <a class="projects__gallery__thumb__wrapper" href="https://ryancahela.github.io/food-quiz-app/">
-                <li class="projects__gallery__thumb">
-                    <h4 class="projects__gallery__thumb__heading">Food Origin Master</h4>
-                    <img class="projects__gallery__thumb__img" src="img/food-quiz-thumb.png" alt="thumbnail for food quiz">
-                    <p class="projects__gallery__thumb__paragraph">This is a quiz that tests your knowledge of the origins of different foods</p>
-                </li>
-            </a>
-            <a class="projects__gallery__thumb__wrapper" href="https://ryancahela.github.io/todo-list-2019/">
-                <li class="projects__gallery__thumb">
-                    <h4 class="projects__gallery__thumb__heading">Todo List 2019</h4>
-                    <img class="projects__gallery__thumb__img" src="img/todo-list-thumb.png" alt="thumbnail for food quiz">
-                    <p class="projects__gallery__thumb__paragraph">Simple CRUD App build with vanilla Javascript</p>
-                </li>
-            </a>
-            <a class="projects__gallery__thumb__wrapper" href="https://ryancahela.github.io/todo-list-2019/">
-                <li class="projects__gallery__thumb">
-                    <h4 class="projects__gallery__thumb__heading">Todo List 2019</h4>
-                    <img class="projects__gallery__thumb__img" src="img/todo-list-thumb.png" alt="thumbnail for food quiz">
-                    <p class="projects__gallery__thumb__paragraph">Simple CRUD App build with vanilla Javascript</p>
-                </li>
-            </a>
-            <a class="projects__gallery__thumb__wrapper" href="https://ryancahela.github.io/todo-list-2019/">
-                <li class="projects__gallery__thumb">
-                    <h4 class="projects__gallery__thumb__heading">Todo List 2019</h4>
-                    <img class="projects__gallery__thumb__img" src="img/todo-list-thumb.png" alt="thumbnail for food quiz">
-                    <p class="projects__gallery__thumb__paragraph">Simple CRUD App build with vanilla Javascript</p>
-                </li>
-            </a>
-            <a class="projects__gallery__thumb__wrapper" href="https://ryancahela.github.io/todo-list-2019/">
-                <li class="projects__gallery__thumb">
-                    <h4 class="projects__gallery__thumb__heading">Todo List 2019</h4>
-                    <img class="projects__gallery__thumb__img" src="img/todo-list-thumb.png" alt="thumbnail for food quiz">
-                    <p class="projects__gallery__thumb__paragraph">Simple CRUD App build with vanilla Javascript</p>
-                </li>
-            </a>
-            <a class="projects__gallery__thumb__wrapper" href="https://ryancahela.github.io/todo-list-2019/">
-                <li class="projects__gallery__thumb">
-                    <h4 class="projects__gallery__thumb__heading">Todo List 2019</h4>
-                    <img class="projects__gallery__thumb__img" src="img/todo-list-thumb.png" alt="thumbnail for food quiz">
-                    <p class="projects__gallery__thumb__paragraph">Simple CRUD App build with vanilla Javascript</p>
-                </li>
-            </a>
-        </ul>
+        <div class="large-screen--container">
+            <h3 class="projects__heading">Projects</h3>
+            
+            <ul class="projects__gallery">
+                <a class="projects__gallery__thumb__wrapper" href="https://ryancahela.github.io/food-quiz-app/">
+                    <li class="projects__gallery__thumb">
+                        <h4 class="projects__gallery__thumb__heading">Food Origin Master</h4>
+                        <img class="projects__gallery__thumb__img" src="img/food-quiz-thumb.png" alt="thumbnail for food quiz">
+                        <p class="projects__gallery__thumb__paragraph">This is a quiz that tests your knowledge of the origins of different foods</p>
+                    </li>
+                </a>
+                <a class="projects__gallery__thumb__wrapper" href="https://ryancahela.github.io/todo-list-2019/">
+                    <li class="projects__gallery__thumb">
+                        <h4 class="projects__gallery__thumb__heading">Todo List 2019</h4>
+                        <img class="projects__gallery__thumb__img" src="img/todo-list-thumb.png" alt="thumbnail for food quiz">
+                        <p class="projects__gallery__thumb__paragraph">Simple CRUD App build with vanilla Javascript</p>
+                    </li>
+                </a>               
+            </ul>
+        </div>
         <svg  class="projects__diagonal-flipped" width="100%" height="100" preserveAspectRatio="none"  viewBox="0 0 1327 1132" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M1327 1132H0L1327 0V1132Z" fill="#32464C"/>
         </svg>      
     </section>
     <section id="contact" class="contact">
-        <h3 class="contact__heading">Contact</h3>
-        <p class="contact__email">Ryancahela@gmail.com</p>
-        <ul class="contact__icons__list">
-            <li class="contact__icon__container">
-                <a class="contact__icon__link" href="#">
-                    <svg class="contact__icons__icon" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail">
-                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                        <polyline points="22,6 12,13 2,6"></polyline>
-                    </svg>
-                    <span class="contact__icon__text">Email</span>
-                </a>
-            </li>
-            <li class="contact__icon__container">
-                <a class="contact__icon__link" href="https://github.com/RyanCahela">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-                    </svg>
-                    <span class="contact__icon__text">GitHub</span>
-                </a>
-            </li>
-            <li class="contact__icon__container">
-                <a class="contact__icon__link" href="https://www.linkedin.com/in/ryan-cahela-6125605b/">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin">
-                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-                        <rect x="2" y="9" width="4" height="12"></rect>
-                        <circle cx="4" cy="4" r="2"></circle>
-                    </svg>
-                    <span class="contact__icon__text">LinkedIn</span>
-                </a>
-            </li>
-            <li></li>
-        </ul>
+        <div class="large-screen--container">
+            <h3 class="contact__heading">Contact</h3>
+            <p class="contact__email">Ryancahela@gmail.com</p>
+            <ul class="contact__icons__list">
+                <li class="contact__icon__container">
+                    <a class="contact__icon__link" href="#">
+                        <svg class="contact__icons__icon" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                        <span class="contact__icon__text">Email</span>
+                    </a>
+                </li>
+                <li class="contact__icon__container">
+                    <a class="contact__icon__link" href="https://github.com/RyanCahela">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                        </svg>
+                        <span class="contact__icon__text">GitHub</span>
+                    </a>
+                </li>
+                <li class="contact__icon__container">
+                    <a class="contact__icon__link" href="https://www.linkedin.com/in/ryan-cahela-6125605b/">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                            <rect x="2" y="9" width="4" height="12"></rect>
+                            <circle cx="4" cy="4" r="2"></circle>
+                        </svg>
+                        <span class="contact__icon__text">LinkedIn</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
 
 
     </section>

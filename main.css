@@ -13,6 +13,7 @@
     --hero-box-pink: #D44A7F;
     --hero-box-orange: #FFAA53;
     --hero-box-red: #FF6A53;
+    --container-max-width: 900px;
 }
 
 /* apply a natural box layout model to all elements, but allowing components to change */
@@ -73,8 +74,10 @@ ul {
     display: block;
 }
 
-.header__link:hover {
+.header__link:hover,
+.header__link:active {
     cursor: pointer;
+    color: var(--about-bg-light);
 }
 
 .about-me {
@@ -91,32 +94,29 @@ ul {
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-size: 5rem;
 
 }
 
 .about-me__hero-heading {
-    font-size: 5rem;
+    font-size: inherit;
     padding: 10px 20px;
 
 }
 
 .about-me__hero-box__container {
-    width: 295px;
-    translate: transformY(50%);
-    
+    font-size: inherit;
+    display: flex;
+    flex-direction: column;
+
 }
 
 .about-me__hero-box {
-    background-color: var(--hero-box-green);
     padding: 10px 20px;
-    font-size: 5rem;
+    font-size: inherit;
     text-align: center;
-    position: absolute;
     transition: opacity 0.1s linear;
-    width: 295px;
     filter: saturate(60%);
-
-    
 }
 
 .about-me__hero-box__fadeout {
@@ -144,7 +144,8 @@ ul {
 
 .about-me__picture {
     border-radius: 50%;
-    max-width: 350px;
+    width: 50vw;
+    max-width: 330px;
     display: block;
     margin: 0 auto;
     filter: opacity(90%);
@@ -216,7 +217,7 @@ ul {
 }
 
 .contact__heading {
-    font-size: 8rem;
+    font-size: 3rem;
 }
 
 .contact__email-icon {
@@ -226,7 +227,7 @@ ul {
 .contact__icons__list {
     display: flex;
     flex-direction: column;
-    padding: 0;
+    padding-left: 0;
 }
 
 .contact__icon__container {
@@ -249,6 +250,11 @@ ul {
     padding: 10px 20px;
 }
 
+.contact__icon__link:hover,
+.contact__icon__link:active {
+    color: var(--about-bg-light);
+}
+
 .contact__icon__text {
     margin-left: 10px;
 }
@@ -257,12 +263,6 @@ ul {
 /***************************
 COLOR CLASSES
 ****************************/
---hero-box-green: #4AE178;
-    --hero-box-purp: #5973DB;
-    --hero-box-yellow: #FFCC53;
-    --hero-box-pink: #D44A7F;
-    --hero-box-orange: #FFAA53;
-    --hero-box-red: #FF6A53;
 
 
 .green-bg {
@@ -332,6 +332,13 @@ only screen and (min-device-pixel-ratio: 1.5){
 
 
 @media screen and (min-width: 750px) {
+    .about-me__heading,
+    .projects__heading,
+    .contact__heading {
+        font-size: 5rem;
+    }
+
+
     .header__nav {
         display: flex;
         align-items: baseline;
@@ -347,20 +354,33 @@ only screen and (min-device-pixel-ratio: 1.5){
         margin-left: 50px;
     }
 
-    .about-me {
+    .about-me-container {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-row-gap: 100px;
         grid-column-gap: 10px;
+        max-width: var(--container-max-width);
+        margin: 0 auto;
     }
 
     .about-me__hero-animation {
         grid-column: 1 / -1;
+        font-size: 7rem;
     }
 
     .about-me__picture-container {
         grid-column: 2 / 3;
         grid-row: 2 / 3;
+    }
+
+    .about-me__hero-box {
+    }
+
+ 
+
+    .large-screen--container {
+        max-width: var(--container-max-width);
+        margin: 0 auto;
     }
 
     .projects__gallery {
@@ -375,8 +395,20 @@ only screen and (min-device-pixel-ratio: 1.5){
         height: 100%;
     }
 
-    .contact__icon__list {
+    .contact__icons__list {
         display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0;
+    }
+
+    .contact__icon__link {
+        padding: 15px 50px;
+    }
+
+    .large-screen-container {
+        max-width: 900px;
+        margin: 0 auto;
     }
 
 }
