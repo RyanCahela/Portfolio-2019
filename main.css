@@ -144,7 +144,7 @@ ul {
 
 .about-me__picture {
     border-radius: 50%;
-    max-width: 50vw;
+    max-width: 350px;
     display: block;
     margin: 0 auto;
     filter: opacity(90%);
@@ -327,5 +327,56 @@ only screen and (min-device-pixel-ratio: 1.5){
     width:100%;
     overflow-x:hidden;
   }
+
+}
+
+
+@media screen and (min-width: 750px) {
+    .header__nav {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-around;
+        padding: 10px;
+    }
+
+    .margin-left--auto {
+        margin-left: auto;
+    }
+
+    .margin-left--50px {
+        margin-left: 50px;
+    }
+
+    .about-me {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap: 100px;
+        grid-column-gap: 10px;
+    }
+
+    .about-me__hero-animation {
+        grid-column: 1 / -1;
+    }
+
+    .about-me__picture-container {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+    }
+
+    .projects__gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 20px;
+        align-items: stretch;
+    }
+
+    .projects__gallery__thumb {
+        margin: 0;
+        height: 100%;
+    }
+
+    .contact__icon__list {
+        display: flex;
+    }
 
 }
