@@ -89,40 +89,29 @@ ul {
 
 .about-me__hero-animation {
     margin-bottom: 30px;
-    width: max-content;
+    width: 300px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    align-items: center;
     font-size: 5rem;
-
 }
 
 .about-me__hero-heading {
     font-size: inherit;
     padding: 10px 20px;
+    align-self: center;
 
 }
 
-.about-me__hero-box__container {
-    font-size: inherit;
-    display: flex;
-    flex-direction: column;
-
-}
 
 .about-me__hero-box {
     padding: 10px 20px;
     font-size: inherit;
     text-align: center;
-    transition: opacity 0.1s linear;
-    filter: saturate(60%);
+    transition: background-color .3s linear;
+    filter: brightness(80%) opacity(80%);
 }
 
-.about-me__hero-box__fadeout {
-    opacity: 0;
-    transition: opacity 0.1s linear;
-}
 
 .about-me__heading {
     font-size: 3rem;
@@ -264,9 +253,22 @@ ul {
 COLOR CLASSES
 ****************************/
 
+.green-bg,
+.purp-bg,
+.yellow-bg,
+.pink-bg,
+.orange-bg,
+.red-bg {
+    transition: background-color 0.3s linear;
+}
+
 
 .green-bg {
     background-color: var(--hero-box-green);
+}
+
+.css-text:after {
+    content: 'css';
 }
 
 .purp-bg {
@@ -366,6 +368,7 @@ only screen and (min-device-pixel-ratio: 1.5){
     .about-me__hero-animation {
         grid-column: 1 / -1;
         font-size: 7rem;
+        width: 500px;
     }
 
     .about-me__picture-container {

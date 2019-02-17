@@ -1,43 +1,49 @@
 (function heroAnimation(){
     var heroContainer = document.querySelector('.about-me__hero-box__container');
-    var heroBoxArray = Array.from(document.querySelectorAll('.about-me__hero-box'));
+    var heroBox = document.querySelector('.about-me__hero-box');
+    var heroStyleList = [{
+        textContent: 'Design',
+        classes: 'green-bg'
+    },
+    {
+        textContent: 'CSS',
+        classes: 'purp-bg'
+    },
+    {
+        textContent: 'Javascript',
+        classes: 'yellow-bg'
+    },
+    {
+        textContent: 'React',
+        classes: 'red-bg'
+    },
+    {
+        textContent: 'UX',
+        classes: 'pink-bg'
+    },
+    {
+        textContent: 'Animations',
+        classes: 'orange-bg'
+    }];
+
+
+    let currentStyleListIndex = 1;
+
     
-    heroBoxArray.forEach(function fadeOut(item,index) {
-        let multiplyer = index + 1;
-
-        let timer = setTimeout(function timer() {
-            item.classList.add('about-me__hero-box__fadeout')
-            console.log(index);
-            console.log(heroBoxArray.length);
-            if(multiplyer === heroBoxArray.length) {
-                heroBoxArray.forEach(resetFadeOutAnimation);
-                heroBoxArray.forEach(fadeOut);
-            }
-        }, 3000 * multiplyer );
-    });
-
-    function resetFadeOutAnimation(item) {
-        item.classList.remove('about-me__hero-box__fadeout');
-    }
-
-
-    function runFadeOutAnimation(item,index) {
-        let multiplyer = index + 1;
-
-        let timer = setTimeout(function timer() {
-            item.classList.toggle('about-me__hero-box__fadeout')
-            console.log(index);
-            console.log(heroBoxArray.length);
-            if(multiplyer === heroBoxArray.length) {
-                console.log('animation done');
-                runFadeOutAnimation();
-            }
-        }, 3000 * multiplyer );
-    }
-
-
-
-    console.log(heroBoxArray);
+    let interval = setInterval(function morphElement(){
+        console.log(currentStyleListIndex);
+        console.log(heroStyleList.length);
+        if(currentStyleListIndex > 0){
+            heroBox.classList.remove(heroStyleList[currentStyleListIndex - 1].classes);
+        }
+        if(currentStyleListIndex === heroStyleList.length) {
+            currentStyleListIndex = 0;
+        }
+        heroBox.textContent = heroStyleList[currentStyleListIndex].textContent;
+        heroBox.classList.add(heroStyleList[currentStyleListIndex].classes);
+        currentStyleListIndex++;      
+        console.log('interval ran');
+    }, 3000);
 
 
 
