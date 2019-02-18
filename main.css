@@ -203,6 +203,7 @@ ul {
     flex-direction: column;
     justify-content: space-around;
     align-items: flex-start;
+    font-size: 2rem;
 }
 
 .projects__gallery__thumb__heading {
@@ -211,6 +212,35 @@ ul {
 
 .projects__gallery__thumb__img {
     width: 100%;
+}
+
+.projects__gallery__thumb__paragraph {
+    border-bottom: 1px solid var(--light-text);
+    padding-bottom: 20px;
+}
+
+.projects__gallery__thumb__tech-used {
+    font-size: 1.6rem;
+    padding: 0;
+}
+
+.projects__gallery__thumb__tech-used__heading {
+    margin-bottom: 10px;
+}
+
+.projects__gallery__thumb__tech-used__icon {
+    height: 30px;
+    width: 30px;
+}
+
+.projects__gallery__thumb__tech-used__li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.projects__gallery__thumb__tech-used__text {
+    margin-left: 10px;
 }
 
 
