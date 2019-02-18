@@ -73,10 +73,9 @@ ul {
     margin-top: 20px;
 }
 
-.header__link {
+.basic--link {
     text-decoration: none;
     color: inherit;
-    text-align: center;
     display: block;
 }
 
@@ -166,6 +165,12 @@ ul {
     padding-bottom: 30px;
 }
 
+.projects--link {
+    color: var(--light-text);
+    display: block;
+    margin-bottom: 20px;
+}
+
 .projects__diagonal {
     position: absolute;
     top: -99px;
@@ -215,8 +220,6 @@ ul {
 }
 
 .projects__gallery__thumb__paragraph {
-    border-bottom: 1px solid var(--light-text);
-    padding-bottom: 20px;
 }
 
 .projects__gallery__thumb__tech-used {
@@ -225,7 +228,7 @@ ul {
 }
 
 .projects__gallery__thumb__tech-used__heading {
-    margin-bottom: 10px;
+    margin: 15px 0;
 }
 
 .projects__gallery__thumb__tech-used__icon {
