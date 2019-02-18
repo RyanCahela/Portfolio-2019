@@ -73,7 +73,7 @@ ul {
     margin-top: 20px;
 }
 
-.basic--link {
+.header__link {
     text-decoration: none;
     color: inherit;
     display: block;
