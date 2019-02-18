@@ -25,10 +25,16 @@ html {
   }
   *, *:before, *:after {
     box-sizing: inherit;
-  }
+}
 
-h1,h2,h3,h4,h5,h6,ul {
+ul {
     margin: 0;
+}
+
+
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+    font-family: 'Roboto Slab', serif;
 }
 
 ul {
@@ -94,6 +100,7 @@ ul {
     display: flex;
     flex-direction: column;
     font-size: 5rem;
+    font-family: 'Roboto Slab', serif;
 }
 
 .about-me__hero-heading {
