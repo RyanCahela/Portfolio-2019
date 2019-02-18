@@ -31,8 +31,6 @@
 
     
     let interval = setInterval(function morphElement(){
-        console.log(currentStyleListIndex);
-        console.log(heroStyleList.length);
         if(currentStyleListIndex > 0){
             heroBox.classList.remove(heroStyleList[currentStyleListIndex - 1].classes);
         }
@@ -42,7 +40,6 @@
         heroBox.textContent = heroStyleList[currentStyleListIndex].textContent;
         heroBox.classList.add(heroStyleList[currentStyleListIndex].classes);
         currentStyleListIndex++;      
-        console.log('interval ran');
     }, 3000);
 
 
