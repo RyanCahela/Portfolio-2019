@@ -96,7 +96,7 @@ ul {
 .about-me__hero-image {
     background-image: url('Img/macbook.jpg');
     width: 100%;
-    height: 500px;
+    height: 100vh;
     background-size: cover;
     background-position: 0 60%;
 }
@@ -109,7 +109,7 @@ ul {
     flex-direction: column;
     font-size: 5rem;
     font-family: 'Roboto Slab', serif;
-    padding-top: 100px;
+    padding-top: 200px;
     color: var(--light-text);
 }
 
@@ -126,7 +126,6 @@ ul {
     font-size: inherit;
     text-align: center;
     transition: background-color .3s linear;
-    
 }
 
 
