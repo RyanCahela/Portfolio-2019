@@ -96,7 +96,7 @@ ul {
 .header__link:hover,
 .header__link:active {
     cursor: pointer;
-    color: var(--about-bg-light);
+    text-decoration: underline;
 }
 
 .about-me {
@@ -215,7 +215,13 @@ clip-path: polygon(0 0, 100% 0, 100% 93%, 0% 100%);
 
 .projects__heading {
     font-size: 3rem;
+}
+
+.projects__subheading {
     margin-bottom: 50px;
+    font-size: 2.5rem;
+    font-style: italic;
+    margin-top: 15px;
 }
 
 .projects__gallery {
