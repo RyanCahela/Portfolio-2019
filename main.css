@@ -1,12 +1,12 @@
 :root {
     --dark-text: #0A090C;
     --light-text: #EDF2F4;
-    --about-bg-light: #04AAC3;
-    --about-bg-dark: #2BB6C9;
-    --projects-bg: #3F5668;
-    --projects-thumb-bg: #283A52;
-    --contact-bg-light: #04AAC3;
-    --contact-bg-dark: #0468A6;
+    --about-bg-light: #243b55;
+    --about-bg-dark: #141e30;
+    --projects-bg: #243b55;
+    --projects-thumb-bg: #132940;
+    --contact-bg-light: #2C5364;
+    --contact-bg-dark: #0F2027;
     --hero-box-green: #35B03D;
     --hero-box-purp: #977ABE;
     --hero-box-yellow: #DBB638;
@@ -49,8 +49,12 @@ ul {
     font-size: 2.4rem;
 }
 
+.large-screen--container {
+    height: 100%;
+}
+
 .header {
-    background-color: var(--projects-bg);
+    background-color: var(--about-bg-dark);
     color: var(--light-text);
     position: absolute;
     top: 0;
@@ -97,7 +101,7 @@ ul {
 
 .about-me {
     color: var(--dark-text);
-    background-image: linear-gradient(50deg,var(--contact-bg-light) 50%,var(--contact-bg-dark));
+    background-image: linear-gradient(50deg,var(--about-bg-dark) 50%,var(--about-bg-light));
     padding-bottom: 100px;
     padding-top: 150px;
     position: relative;
@@ -148,9 +152,19 @@ clip-path: polygon(0 0, 100% 0, 100% 93%, 0% 100%);
     font-size: 3rem;
 }
 
+.about-me__subheading {
+    font-size: 2.5rem;
+    font-style: italic;
+    margin-top: 10px;
+}
+
 .about-me__text {
     padding-top: 30px;
     padding-bottom: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    /* background-color:hsla(260, 14%, 4%,0.8); */
+    color: var(--light-text);
 }
 
 .about-me__paragraph {
@@ -262,8 +276,8 @@ clip-path: polygon(0 0, 100% 0, 100% 93%, 0% 100%);
 .contact {
     padding-top: 150px;
     padding-bottom: 100px;
-    color: var(--dark-text);
-    background-image: linear-gradient(50deg,var(--contact-bg-light),var(--contact-bg-dark));
+    color: var(--light-text);
+    background-image: linear-gradient(50deg,var(--about-bg-dark),var(--about-bg-dark));
 
 }
 
@@ -303,7 +317,8 @@ clip-path: polygon(0 0, 100% 0, 100% 93%, 0% 100%);
 
 .contact__icon__link:hover,
 .contact__icon__link:active {
-    color: var(--about-bg-light);
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
 }
 
 .contact__icon__text {
