@@ -56,7 +56,7 @@ ul {
 .header {
     background-color: var(--about-bg-dark);
     color: var(--light-text);
-    position: absolute;
+    position: relative;
     top: 0;
     right: 0;
     left: 0;
@@ -114,10 +114,11 @@ ul {
     background-size: cover;
     background-position: 0 60%;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 93%, 0% 100%);
-clip-path: polygon(0 0, 100% 0, 100% 93%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 93%, 0% 100%);
     z-index: 2;
     position: relative;
     bottom: -150px;
+    margin-top: -150px;
 }
 
 .about-me__hero-animation {
