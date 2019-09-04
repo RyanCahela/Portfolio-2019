@@ -229,53 +229,60 @@ ul {
     padding: 0;
 }
 
-.projects__gallery__thumb__wrapper {
+.projects__thumb__wrapper {
     display: block;
     text-decoration: none;
     color: var(--light-text);
-
 }
 
-.projects__gallery__thumb {
+.projects__thumb {
     background-color: var(--projects-thumb-bg);
     margin-bottom: 60px;
     padding: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     align-items: flex-start;
     font-size: 2rem;
 }
 
-.projects__gallery__thumb__heading {
-    margin-bottom: 20px;
+.projects__thumb__heading {
+  margin-bottom: 5px;
 }
 
-.projects__gallery__thumb__img {
+.projects__thumb__subheading {
+  font-style: italic;
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+
+.projects__thumb__img {
     width: 100%;
 }
 
-.projects__gallery__thumb__tech-used {
+.projects__thumb__tech-used {
     font-size: 1.6rem;
     padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
 }
 
-.projects__gallery__thumb__tech-used__heading {
+.projects__thumb__tech-used__heading {
     margin: 15px 0;
 }
 
-.projects__gallery__thumb__tech-used__icon {
+.projects__thumb__tech-used__icon {
     height: 30px;
     width: 30px;
 }
 
-.projects__gallery__thumb__tech-used__li {
+.projects__thumb__tech-used__li {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
 }
 
-.projects__gallery__thumb__tech-used__text {
+.projects__thumb__tech-used__text {
     margin-left: 10px;
 }
 
@@ -399,21 +406,16 @@ COLOR CLASSES
     z-index: 50;
 }
 
-
-
-
 @media
 only screen and (-webkit-min-device-pixel-ratio: 1.5),
 only screen and (-o-min-device-pixel-ratio: 3/2),
 only screen and (min--moz-device-pixel-ratio: 1.5),
 only screen and (min-device-pixel-ratio: 1.5){
-
   html,
   body{
     width:100%;
     overflow-x:hidden;
   }
-
 }
 
 
@@ -423,7 +425,6 @@ only screen and (min-device-pixel-ratio: 1.5){
     .contact__heading {
         font-size: 5rem;
     }
-
 
     .header__nav {
         display: flex;
@@ -463,14 +464,20 @@ only screen and (min-device-pixel-ratio: 1.5){
 
     .projects__gallery {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
         grid-gap: 20px;
         align-items: stretch;
     }
 
-    .projects__gallery__thumb {
+    .projects__thumb {
         margin: 0;
         height: 100%;
+    }
+
+    .projects__thumb__tech-used {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      width: 100%;
     }
 
     .contact__icons__list {
