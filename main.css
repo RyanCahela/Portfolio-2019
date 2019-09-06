@@ -196,9 +196,14 @@ ul {
 
 .projects--link {
     color: var(--light-text);
+    position: relative;
     display: block;
     margin-bottom: 20px;
+    line-height: 1.6rem;
+    padding-bottom: 5px;
+    transition: border-bottom 0.5s ease-in-out;
 }
+
 
 .projects__diagonal {
     position: absolute;
@@ -327,12 +332,12 @@ ul {
     text-decoration: none;
     flex: 1;
     padding: 10px 20px;
+    transition: transform 0.3s ease;
 }
 
 .contact__icon__link:hover,
 .contact__icon__link:active {
     transform: scale(1.1);
-    transition: transform 0.3s ease;
 }
 
 .contact__icon__text {
