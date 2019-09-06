@@ -63,11 +63,10 @@ ul {
     height: 150px;
     width: 100%;
     z-index: 100;
-
 }
 
 
-.header__nav {
+.nav__list {
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 10px 0 0 0;
@@ -91,12 +90,6 @@ ul {
     display: block;
     position: relative;
     z-index: 101;
-}
-
-.header__link:hover,
-.header__link:active {
-    cursor: pointer;
-    text-decoration: underline;
 }
 
 .about-me {
@@ -197,11 +190,28 @@ ul {
 .projects--link {
     color: var(--light-text);
     position: relative;
-    display: block;
+    display: inline-block;
     margin-bottom: 20px;
-    line-height: 1.6rem;
     padding-bottom: 5px;
-    transition: border-bottom 0.5s ease-in-out;
+    text-decoration: none;
+}
+
+.projects--link::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--light-text);
+  transform-origin: bottom left;
+  transition: transform 0.25s ease-out;
+}
+
+.projects--link:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 
@@ -431,7 +441,7 @@ only screen and (min-device-pixel-ratio: 1.5){
         font-size: 5rem;
     }
 
-    .header__nav {
+    .nav__list {
         display: flex;
         align-items: baseline;
         justify-content: space-around;

@@ -1,5 +1,4 @@
 (function heroAnimation(){
-    var heroContainer = document.querySelector('.about-me__hero-box__container');
     var heroBox = document.querySelector('.about-me__hero-box');
     var heroStyleList = [{
         textContent: 'Design',
@@ -41,7 +40,28 @@
         heroBox.classList.add(heroStyleList[currentStyleListIndex].classes);
         currentStyleListIndex++;      
     }, 3000);
+})();
 
+(function scrollIntoViewInit() {
+  //enables scroll on nav click animation
+  
+  let projectsLink = document.querySelector('a[data-scroll-id="projects"]');
+  let contactLink = document.querySelector('a[data-scroll-id="contact"]');
+  let projectsSection = document.querySelector('#projects');
+  let contactSection = document.querySelector("#contact");
 
+  projectsLink.addEventListener('click', function(e) {
+    e.preventDefault();
+    projectsSection.scrollIntoView({
+      behavior: 'smooth'
+    });
+  });
+
+  contactLink.addEventListener('click', function(e) {
+    e.preventDefault();
+    contactSection.scrollIntoView({
+      behavior: 'smooth'
+    });
+  });
 
 })();
